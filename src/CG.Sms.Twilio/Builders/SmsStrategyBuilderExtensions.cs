@@ -11,7 +11,7 @@ using System.Text;
 namespace CG.Sms.Builders
 {
     /// <summary>
-    /// This class contains extension methods related to the <see cref="IEmailStrategyBuilder"/>
+    /// This class contains extension methods related to the <see cref="ISmsStrategyBuilder"/>
     /// type.
     /// </summary>
     public static partial class SmsStrategyBuilderExtensions
