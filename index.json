@@ -1,0 +1,52 @@
+{
+  "api/CG.Sms.Builders.html": {
+    "href": "api/CG.Sms.Builders.html",
+    "title": "Namespace CG.Sms.Builders",
+    "keywords": "Namespace CG.Sms.Builders Classes SmsStrategyBuilderExtensions This class contains extension methods related to the type."
+  },
+  "api/CG.Sms.Builders.SmsStrategyBuilderExtensions.html": {
+    "href": "api/CG.Sms.Builders.SmsStrategyBuilderExtensions.html",
+    "title": "Class SmsStrategyBuilderExtensions",
+    "keywords": "Class SmsStrategyBuilderExtensions This class contains extension methods related to the type. Inheritance System.Object SmsStrategyBuilderExtensions Inherited Members System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Sms.Builders Assembly : CG.Sms.Twilio.dll Syntax public static class SmsStrategyBuilderExtensions Methods AddTwilioStrategy(ISmsStrategyBuilder, IConfiguration) This method registers a Twilio specific strategy for sending sms messages. Declaration public static ISmsStrategyBuilder AddTwilioStrategy(this ISmsStrategyBuilder smsStrategyBuilder, IConfiguration configuration) Parameters Type Name Description CG.Sms.Builders.ISmsStrategyBuilder smsStrategyBuilder The builder to use for the operation. Microsoft.Extensions.Configuration.IConfiguration configuration The configuration to use for the operation. Returns Type Description CG.Sms.Builders.ISmsStrategyBuilder The value of the smsStrategyBuilder parameter, for chaining calls together. Exceptions Type Condition System.ArgumentException This exception is thrown whenever a required argument is missing or invalid."
+  },
+  "api/CG.Sms.Strategies.html": {
+    "href": "api/CG.Sms.Strategies.html",
+    "title": "Namespace CG.Sms.Strategies",
+    "keywords": "Namespace CG.Sms.Strategies Classes TwilioSendResult This class represents twilio SMS results. TwilioSmsStrategy This class is a Twilio based implementation of the CG.Sms.Strategies.ISmsStrategy<TOptions> interface."
+  },
+  "api/CG.Sms.Strategies.Options.html": {
+    "href": "api/CG.Sms.Strategies.Options.html",
+    "title": "Namespace CG.Sms.Strategies.Options",
+    "keywords": "Namespace CG.Sms.Strategies.Options Classes TwilioSmsStrategyOptions This class contains configuration options for twilio sms strategy."
+  },
+  "api/CG.Sms.Strategies.Options.TwilioSmsStrategyOptions.html": {
+    "href": "api/CG.Sms.Strategies.Options.TwilioSmsStrategyOptions.html",
+    "title": "Class TwilioSmsStrategyOptions",
+    "keywords": "Class TwilioSmsStrategyOptions This class contains configuration options for twilio sms strategy. Inheritance System.Object CG.DataAnnotations.ValidatableObject CG.Options.OptionsBase CG.Business.Strategies.Options.StrategyOptions CG.Sms.Options.SmsStrategyOptionsBase TwilioSmsStrategyOptions Implements System.ComponentModel.DataAnnotations.IValidatableObject Inherited Members CG.DataAnnotations.ValidatableObject.Validate(System.ComponentModel.DataAnnotations.ValidationContext) System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Sms.Strategies.Options Assembly : CG.Sms.Twilio.dll Syntax public class TwilioSmsStrategyOptions : SmsStrategyOptionsBase, IValidatableObject Properties AccountSid This property contains a Twilio account security id. Declaration [ProtectedProperty] public string AccountSid { get; set; } Property Value Type Description System.String AuthToken This property contains an authentication token. Declaration [ProtectedProperty] public string AuthToken { get; set; } Property Value Type Description System.String FromPhone This property contains the source phone number for SMS operations. Declaration [ProtectedProperty] public string FromPhone { get; set; } Property Value Type Description System.String Implements System.ComponentModel.DataAnnotations.IValidatableObject"
+  },
+  "api/CG.Sms.Strategies.TwilioSendResult.html": {
+    "href": "api/CG.Sms.Strategies.TwilioSendResult.html",
+    "title": "Class TwilioSendResult",
+    "keywords": "Class TwilioSendResult This class represents twilio SMS results. Inheritance System.Object CG.Sms.SmsResult TwilioSendResult Inherited Members CG.Sms.SmsResult.SmsId System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Sms.Strategies Assembly : CG.Sms.Twilio.dll Syntax public class TwilioSendResult : SmsResult Properties FromPhone This property contains the source phone. Declaration public string FromPhone { get; set; } Property Value Type Description System.String Message This property contains the message. Declaration public string Message { get; set; } Property Value Type Description System.String Sid This property contains the outgoing security id. Declaration public string Sid { get; set; } Property Value Type Description System.String Status This property contains the status of the send operation. Declaration public string Status { get; set; } Property Value Type Description System.String ToPhone This property contains the destination phone. Declaration public string ToPhone { get; set; } Property Value Type Description System.String"
+  },
+  "api/CG.Sms.Strategies.TwilioSmsStrategy.html": {
+    "href": "api/CG.Sms.Strategies.TwilioSmsStrategy.html",
+    "title": "Class TwilioSmsStrategy",
+    "keywords": "Class TwilioSmsStrategy This class is a Twilio based implementation of the CG.Sms.Strategies.ISmsStrategy<TOptions> interface. Inheritance System.Object CG.DisposableBase CG.Business.Strategies.StrategyBase CG.Business.Strategies.StrategyBase < TwilioSmsStrategyOptions > CG.Sms.Strategies.SmsStrategyBase < TwilioSmsStrategyOptions > TwilioSmsStrategy Implements CG.Sms.Strategies.ISmsStrategy < TwilioSmsStrategyOptions > CG.Sms.Strategies.ISmsStrategy CG.Business.Strategies.IStrategy System.IDisposable Inherited Members CG.Business.Strategies.StrategyBase<CG.Sms.Strategies.Options.TwilioSmsStrategyOptions>.Options CG.DisposableBase.System.IDisposable.Dispose() CG.DisposableBase.Dispose(System.Boolean) CG.DisposableBase.IsDisposed System.Object.Equals(System.Object) System.Object.Equals(System.Object, System.Object) System.Object.GetHashCode() System.Object.GetType() System.Object.MemberwiseClone() System.Object.ReferenceEquals(System.Object, System.Object) System.Object.ToString() Namespace : CG.Sms.Strategies Assembly : CG.Sms.Twilio.dll Syntax public class TwilioSmsStrategy : SmsStrategyBase<TwilioSmsStrategyOptions>, ISmsStrategy<TwilioSmsStrategyOptions>, ISmsStrategy, IStrategy, IDisposable Constructors TwilioSmsStrategy(IOptions<TwilioSmsStrategyOptions>) This constructor creates a new instance of the TwilioSmsStrategy class. Declaration public TwilioSmsStrategy(IOptions<TwilioSmsStrategyOptions> options) Parameters Type Name Description Microsoft.Extensions.Options.IOptions < TwilioSmsStrategyOptions > options The options to use with this strategy. Methods SendAsync(IEnumerable<String>, String, CancellationToken) Declaration public override Task<IEnumerable<SmsResult>> SendAsync(IEnumerable<string> toPhones, string message, CancellationToken token = default(CancellationToken)) Parameters Type Name Description System.Collections.Generic.IEnumerable < System.String > toPhones System.String message System.Threading.CancellationToken token Returns Type Description System.Threading.Tasks.Task < System.Collections.Generic.IEnumerable < CG.Sms.SmsResult >> Overrides CG.Sms.Strategies.SmsStrategyBase<CG.Sms.Strategies.Options.TwilioSmsStrategyOptions>.SendAsync(System.Collections.Generic.IEnumerable<System.String>, System.String, System.Threading.CancellationToken) Implements CG.Sms.Strategies.ISmsStrategy<TOptions> CG.Sms.Strategies.ISmsStrategy CG.Business.Strategies.IStrategy System.IDisposable"
+  },
+  "api/index.html": {
+    "href": "api/index.html",
+    "title": "PLACEHOLDER",
+    "keywords": "PLACEHOLDER TODO: Add .NET projects to the src folder and run docfx to generate REAL API Documentation !"
+  },
+  "articles/intro.html": {
+    "href": "articles/intro.html",
+    "title": "Add your introductions here!",
+    "keywords": "Add your introductions here!"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "Introduction",
+    "keywords": "Introduction CG.Sms.Twilio.dll contains an Twilio SMS service used by other CodeGator packages."
+  }
+}
