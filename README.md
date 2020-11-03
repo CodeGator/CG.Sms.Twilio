@@ -1,9 +1,9 @@
 # CG.Sms.Twilio: 
 ---
-[![Build Status](https://dev.azure.com/codegator/CG.Sms.Twilio/_apis/build/status/CodeGator.CG.Sms.Twilio?branchName=master)](https://dev.azure.com/codegator/CG.Sms.Twilio/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/codegator/CG.Sms.Twilio/_apis/build/status/CodeGator.CG.Sms.Twillio?branchName=main)](https://dev.azure.com/codegator/CG.Sms.Twilio/_build/latest?definitionId=27&branchName=main)
 [![Github docs](https://img.shields.io/static/v1?label=Documentation&message=online&color=blue)](https://codegator.github.io/CG.Sms.Twilio/index.html)
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Sms.Twilio.svg?style=flat)](https://nuget.org/packages/CG.Sms.Twilio)
-![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sms.Twilio/3)
+![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sms.Twilio/27)
 
 #### What does it do?
 The package contains Twilio SMS extension used by other CodeGator packages.
