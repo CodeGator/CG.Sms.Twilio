@@ -61,6 +61,15 @@ namespace CG.Sms.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} error! It appears the method was called using the &apos;{1}&apos; configuration section. This method should be called using the Twillio section..
+        /// </summary>
+        internal static string NotTwillioSection {
+            get {
+                return ResourceManager.GetString("NotTwillioSection", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Failed to locate an extension method named: &apos;{0}&apos; accepting an IConfiguration argument..
         /// </summary>
         internal static string ServiceCollectionExtensions_MethodNotFound {
