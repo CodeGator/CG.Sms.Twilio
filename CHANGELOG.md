@@ -7,6 +7,8 @@
 
 * I switched the build target to .net core 3.1
 
+* I reworked the strategy loader code.
+
 ## 2020.1
 
 * I copied the old code. 
