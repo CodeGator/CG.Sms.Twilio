@@ -1,31 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: CG.Sms.Builders
-  name: CG.Sms.Builders
-  href: api/CG.Sms.Builders.html
-  commentId: N:CG.Sms.Builders
-  fullName: CG.Sms.Builders
-  nameWithType: CG.Sms.Builders
-- uid: CG.Sms.Builders.SmsStrategyBuilderExtensions
-  name: SmsStrategyBuilderExtensions
-  href: api/CG.Sms.Builders.SmsStrategyBuilderExtensions.html
-  commentId: T:CG.Sms.Builders.SmsStrategyBuilderExtensions
-  fullName: CG.Sms.Builders.SmsStrategyBuilderExtensions
-  nameWithType: SmsStrategyBuilderExtensions
-- uid: CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy(CG.Sms.Builders.ISmsStrategyBuilder,Microsoft.Extensions.Configuration.IConfiguration)
-  name: AddTwilioStrategy(ISmsStrategyBuilder, IConfiguration)
-  href: api/CG.Sms.Builders.SmsStrategyBuilderExtensions.html#CG_Sms_Builders_SmsStrategyBuilderExtensions_AddTwilioStrategy_CG_Sms_Builders_ISmsStrategyBuilder_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy(CG.Sms.Builders.ISmsStrategyBuilder,Microsoft.Extensions.Configuration.IConfiguration)
-  fullName: CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy(CG.Sms.Builders.ISmsStrategyBuilder, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: SmsStrategyBuilderExtensions.AddTwilioStrategy(ISmsStrategyBuilder, IConfiguration)
-- uid: CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy*
-  name: AddTwilioStrategy
-  href: api/CG.Sms.Builders.SmsStrategyBuilderExtensions.html#CG_Sms_Builders_SmsStrategyBuilderExtensions_AddTwilioStrategy_
-  commentId: Overload:CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy
-  isSpec: "True"
-  fullName: CG.Sms.Builders.SmsStrategyBuilderExtensions.AddTwilioStrategy
-  nameWithType: SmsStrategyBuilderExtensions.AddTwilioStrategy
 - uid: CG.Sms.Strategies
   name: CG.Sms.Strategies
   href: api/CG.Sms.Strategies.html
@@ -192,3 +167,47 @@ references:
   isSpec: "True"
   fullName: CG.Sms.Strategies.TwilioSmsStrategy.SendAsync
   nameWithType: TwilioSmsStrategy.SendAsync
+- uid: CG.Sms.Strategies.Twillio
+  name: CG.Sms.Strategies.Twillio
+  href: api/CG.Sms.Strategies.Twillio.html
+  commentId: N:CG.Sms.Strategies.Twillio
+  fullName: CG.Sms.Strategies.Twillio
+  nameWithType: CG.Sms.Strategies.Twillio
+- uid: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions
+  name: ApplicationBuilderExtensions
+  href: api/CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.html
+  commentId: T:CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions
+  fullName: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions
+  nameWithType: ApplicationBuilderExtensions
+- uid: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: UseTwillioStrategies(IApplicationBuilder, IWebHostEnvironment)
+  href: api/CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.html#CG_Sms_Strategies_Twillio_ApplicationBuilderExtensions_UseTwillioStrategies_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  fullName: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: ApplicationBuilderExtensions.UseTwillioStrategies(IApplicationBuilder, IWebHostEnvironment)
+- uid: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies*
+  name: UseTwillioStrategies
+  href: api/CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.html#CG_Sms_Strategies_Twillio_ApplicationBuilderExtensions_UseTwillioStrategies_
+  commentId: Overload:CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies
+  isSpec: "True"
+  fullName: CG.Sms.Strategies.Twillio.ApplicationBuilderExtensions.UseTwillioStrategies
+  nameWithType: ApplicationBuilderExtensions.UseTwillioStrategies
+- uid: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.html
+  commentId: T:CG.Sms.Strategies.Twillio.ServiceCollectionExtensions
+  fullName: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  name: AddTwillioStrategies(IServiceCollection, IConfiguration)
+  href: api/CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.html#CG_Sms_Strategies_Twillio_ServiceCollectionExtensions_AddTwillioStrategies_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
+  fullName: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: ServiceCollectionExtensions.AddTwillioStrategies(IServiceCollection, IConfiguration)
+- uid: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies*
+  name: AddTwillioStrategies
+  href: api/CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.html#CG_Sms_Strategies_Twillio_ServiceCollectionExtensions_AddTwillioStrategies_
+  commentId: Overload:CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies
+  isSpec: "True"
+  fullName: CG.Sms.Strategies.Twillio.ServiceCollectionExtensions.AddTwillioStrategies
+  nameWithType: ServiceCollectionExtensions.AddTwillioStrategies
