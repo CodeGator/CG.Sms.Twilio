@@ -20,44 +20,24 @@ namespace CG.Sms.Strategies.Twillio
         #region Public methods
 
         /// <summary>
-        /// This method registers the <see cref="TwillioEmailStrategy"/> strategy
+        /// This method registers the <see cref="TwilioSmsStrategy"/> strategy
         /// with the specified service collection.
         /// </summary>
         /// <param name="serviceCollection">The service collection to use for
         /// the operation.</param>
         /// <param name="configuration">The configuration to use for the operation.</param>
+        /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <returns>The value of the <paramref name="serviceCollection"/> 
         /// parameter, for chaining calls together.</returns>
         public static IServiceCollection AddTwillioStrategies(
             this IServiceCollection serviceCollection,
-            IConfiguration configuration
+            IConfiguration configuration,
+            ServiceLifetime serviceLifetime = ServiceLifetime.Scoped
             )
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
                 .ThrowIfNull(configuration, nameof(configuration));
-
-            // We should be pointed to the Twillio section, but, just in case,
-            //   let's do one more check. We're doing this here because
-            //   configuration bugs are difficult and frustrating to
-            //   troubleshoot, so, we want to provide as much feedback
-            //   as is practical to the caller.
-
-            // Get the path.
-            var path = configuration.GetPath();
-
-            // Are we not pointed to smtp section?
-            if (false == path.EndsWith("Twillio"))
-            {
-                // Panic!
-                throw new ConfigurationException(
-                    message: string.Format(
-                        Resources.NotTwillioSection,
-                        nameof(AddTwillioStrategies),
-                        path
-                        )
-                    );
-            }
 
             // Configure the strategy options.
             serviceCollection.ConfigureOptions<TwilioSmsStrategyOptions>(
@@ -65,7 +45,18 @@ namespace CG.Sms.Strategies.Twillio
                 );
 
             // Register the strategy.
-            serviceCollection.AddSingleton<ISmsStrategy, TwilioSmsStrategy>();
+            switch (serviceLifetime)
+            {
+                case ServiceLifetime.Scoped:
+                    serviceCollection.AddScoped<ISmsStrategy, TwilioSmsStrategy>();
+                    break;
+                case ServiceLifetime.Singleton:
+                    serviceCollection.AddSingleton<ISmsStrategy, TwilioSmsStrategy>();
+                    break;
+                case ServiceLifetime.Transient:
+                    serviceCollection.AddTransient<ISmsStrategy, TwilioSmsStrategy>();
+                    break;
+            }
 
             // Return the service collection.
             return serviceCollection;
