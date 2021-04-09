@@ -2,6 +2,7 @@
 using CG.Sms.Properties;
 using CG.Sms.Strategies.Options;
 using CG.Validations;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -31,16 +32,19 @@ namespace CG.Sms.Strategies.Twillio
         /// parameter, for chaining calls together.</returns>
         public static IServiceCollection AddTwillioStrategies(
             this IServiceCollection serviceCollection,
+            IDataProtector dataProtector,
             IConfiguration configuration,
             ServiceLifetime serviceLifetime = ServiceLifetime.Scoped
             )
         {
             // Validate the parameters before attempting to use them.
             Guard.Instance().ThrowIfNull(serviceCollection, nameof(serviceCollection))
+                .ThrowIfNull(dataProtector, nameof(dataProtector))
                 .ThrowIfNull(configuration, nameof(configuration));
 
             // Configure the strategy options.
             serviceCollection.ConfigureOptions<TwilioSmsStrategyOptions>(
+                dataProtector,
                 configuration
                 );
 

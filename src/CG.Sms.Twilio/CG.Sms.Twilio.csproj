@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>net5.0</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <DocumentationFile>bin\Debug\netcoreapp3.1\cg.sms.twilio.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net5.0\cg.sms.twilio.xml</DocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
@@ -11,7 +11,7 @@
     <Description>This package contains Twilio SMS extensions used by other CodeGator packages. 
 
 Platforms supported:
-      .NET Core 3.1 or above</Description>
+      .NET 5.x or above</Description>
     <Copyright>Copyright © 2019 - 2021 by CodeGator. All rights reserved.</Copyright>
     <PackageLicenseUrl></PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/CodeGator/CG.Sms.Twilio</PackageProjectUrl>
@@ -27,11 +27,11 @@ Platforms supported:
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="CG.Sms" Version="2021.1.9" />
-    <PackageReference Include="Nerdbank.GitVersioning" Version="3.3.37" PrivateAssets="all">
+    <PackageReference Include="CG.Sms" Version="2021.2.1" />
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.194" PrivateAssets="all">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Twilio" Version="5.53.0" />
+    <PackageReference Include="Twilio" Version="5.58.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.4'">
