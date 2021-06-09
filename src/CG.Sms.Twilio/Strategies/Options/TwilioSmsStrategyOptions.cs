@@ -1,4 +1,5 @@
 ﻿using CG.Business.Strategies.Options;
+using CG.DataProtection;
 using CG.Options;
 using CG.Sms.Options;
 using System;
