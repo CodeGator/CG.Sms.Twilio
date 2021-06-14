@@ -26,7 +26,7 @@ namespace CG.Sms.Strategies.Twillio
         /// operation.</param>
         /// <returns>Ther value of the <paramref name="applicationBuilder"/>
         /// parameter, for chaining calls together.</returns>
-        public static IApplicationBuilder UseTwillioStrategies(
+        public static IApplicationBuilder UseTwilioStrategies(
             this IApplicationBuilder applicationBuilder,
             IWebHostEnvironment hostEnvironment
             )
