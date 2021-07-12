@@ -5,6 +5,7 @@
 [![NuGet downloads](https://img.shields.io/nuget/dt/CG.Sms.Twilio.svg?style=flat)](https://nuget.org/packages/CG.Sms.Twilio)
 ![Azure DevOps coverage](https://img.shields.io/azure-devops/coverage/codegator/CG.Sms.Twilio/28)
 [![Github discussion](https://img.shields.io/badge/Discussion-online-blue)](https://github.com/CodeGator/CG.Sms.Twilio/discussions)
+[![CG.Sms.Twilio on fuget.org](https://www.fuget.org/packages/CG.Sms.Twilio/badge.svg)](https://www.fuget.org/packages/CG.Sms.Twilio)
 
 #### What does it do?
 The package contains Twilio SMS extension used by other CodeGator packages.
@@ -19,6 +20,8 @@ PM> Install-Package CG.Sms.Twilio
 
 #### How do I contact you?
 If you've spotted a bug in the code please use the project Issues [HERE](https://github.com/CodeGator/CG.Sms.Twilio/issues)
+
+We have a discussion group [HERE](https://github.com/CodeGator/CG.Sms.Twilio/discussions)
 
 #### Is there any documentation?
 There is developer documentation [HERE](https://codegator.github.io/CG.Sms.Twilio/)
