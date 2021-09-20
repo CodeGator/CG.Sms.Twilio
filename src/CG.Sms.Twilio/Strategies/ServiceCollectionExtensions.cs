@@ -30,7 +30,7 @@ namespace CG.Sms.Strategies.Twillio
         /// <param name="serviceLifetime">The service lifetime to use for the operation.</param>
         /// <returns>The value of the <paramref name="serviceCollection"/> 
         /// parameter, for chaining calls together.</returns>
-        public static IServiceCollection AddTwilioStrategies(
+        public static IServiceCollection AddTwilioSmsStrategies(
             this IServiceCollection serviceCollection,
             IConfiguration configuration,
             ServiceLifetime serviceLifetime
@@ -44,9 +44,7 @@ namespace CG.Sms.Strategies.Twillio
             serviceCollection.ConfigureOptions<TwilioSmsStrategyOptions>(
                 configuration
                 );
-
             
-
             // Register the strategy.
             switch (serviceLifetime)
             {
